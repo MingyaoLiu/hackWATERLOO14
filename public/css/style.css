@@ -115,28 +115,42 @@ body {
 }
 
 
-
-
-
-.topseg {
-  width: 100%;
-  height: 300px;
-  padding: 0px;
-}
-
-.navbar-verticle {
+.leftseg {
   width: 210px;
   height: 100%;
-  background-color: #FFFAD5;
   float: left;
-  padding: 0; 
+  overflow: auto;
+}
+.midleftseg {
+  width: 100%;
+  height: 70px;
+  margin-top: 5px;
+  margin-right: 0;
+  background-color: #FFD34E;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+.devvertilayer {
+  margin-top: 60px;
+  height: 3000px;
+}
+.navbar-verticle {
+  width: 100%;
+  height: 300px;
+  background-color: #FFFAD5;
+  padding: 0;
+  -moz-box-shadow: -4px -4px 0 6px #DB9E36 inset;
+  -webkit-box-shadow: -4px -4px 0 6px #DB9E36 inset;
+  box-shadow: -4px -4px 0 6px #DB9E36 inset;
 }
 .navbar-verticle ul { 
-  margin: 0; 
+  margin: 0;
+  margin-right: 10px;
   padding: 0; 
   list-style: none; 
 } 
-
 .navbar-verticle ul li { 
    margin: 0; 
    padding: 0; 
@@ -185,75 +199,88 @@ body {
   display: block; 
   border-bottom: 2px solid #FFD34E;
 } 
-
 .navbar-verticle ul .catafirst a { 
-  margin-top: 10px;
+  border-top: 7px solid #DB9E36;
  } 
  .navbar-verticle ul .catalast a { 
   border-bottom: none;
  } 
-.topmongo {
-  margin-left: 215px;
-  margin-right: 0px;
+
+.leftdownseg .spectype {
+  width: 100%;
   height: 100%;
-  background-color: #EFEFEF;
+  margin-top: 5px;
+  margin-left: 5px;
+  float: left;
+}
+
+.leftdownseg .spectype ul .bigone {
+  margin: 0;
+  padding: 0; 
+  list-style: none;
+  display: block;
+  height: 55px;
+  background-color:  #4C4C49;
+  margin-top: 5px;
+}
+.leftdownseg .spectype ul {
+  margin: 0;
+  padding: 0; 
+  list-style: none;
+}
+.leftdownseg .spectype ul .normalone {
+  margin: 0;
+  padding: 0; 
+  list-style: none;
+  display: block;
+  height: 40px;
+  background-color:  #70706D;
+  margin-top: 10PX;
+}
+
+
+
+
+.rightseg {
+  margin-left: 215px;
+  margin-right: 0;
+  height: 100%;
   overflow: auto;
 }
-.topmongo .devhorilayer{
+.devhorilayer{
   height: 100%;
   width: 3000px;
 }
+.topmongo {
+  height: 300px;
+  padding: 0px;
+  background-color: #DB9E36;
+}
 
-.topmongo .devhorilayer .devrepeat1 {
+.topmongo .devrepeat1 {
   width: 220px;
   height: 290px;
-  background-color: #FFF;
   margin-top: 5px;
   margin-left: 5px;
   display: inline-block;
 }
 
-.topmongo .devhorilayer .devrepeat1 .devrate {
+.topmongo .devrepeat1 .devrate {
   display: block;
   height: 50px;
   margin-left: 5px;
   margin-right: 5px;
-  background-color: #565656;
+  background-color: #FFFAD5;
 }
 
-.topmongo .devhorilayer .devrepeat1 .devpic {
+.topmongo .devrepeat1 .devpic {
   display: block;
   margin-left: 5px;
   margin-right: 5px;
-  background-color: #DDDDDD;
+  background-color: #FFFAD5;
   margin-top: 5px;
   height: 230px;
 }
-
-#midseg {
-  width: 100%;
-  height: 40px;
-  margin-top: 5px;
-  background-color: #FFD34E;
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
-  -o-transition: all .5s ease;
-  transition: all .5s ease;
-}
-
-.bottomseg {
-  width: 100%;
-  height: 2000px;
-  top: 5px;
-  background-color: #989898;
-  -webkit-transition: all .2s ease;
-  -moz-transition: all .2s ease;
-  -o-transition: all .2s ease;
-  transition: all .2s ease;
-}
-
-
-
 
 .pointlight {
   list-style-type:none;
@@ -291,14 +318,56 @@ body {
 }
 .pointlight li.last { margin-right: 2px; }
 
+#midseg {
+  width: 100%;
+  height: 70px;
+  margin-top: 5px;
+  background-color: #FFD34E;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
 
+.bottomongo {
+  width: 100%;
+  height: 2000px;
+  top: 10px;
+  background-color: #FFF;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+}
 
+.bottomongo .devrepeat2 {
+  width: 220px;
+  height: 100%;
+  margin-top: 5px;
+  margin-left: 5px;
+  float: left;
+}
 
-
-
-
-
-
-
-
-
+.bottomongo .devrepeat2 ul .devname {
+  margin: 0;
+  padding: 0; 
+  list-style: none;
+  display: block;
+  height: 55px;
+  background-color:  #FFFAD5;
+  margin-top: 5px;
+}
+.bottomongo .devrepeat2 ul {
+  margin: 0;
+  padding: 0; 
+  list-style: none;
+}
+.bottomongo .devrepeat2 ul .devfunc1 {
+  margin: 0;
+  padding: 0; 
+  list-style: none;
+  display: block;
+  height: 40px;
+  background-color:  #FFFAD5;
+  margin-top: 10PX;
+}
