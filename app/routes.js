@@ -1,4 +1,20 @@
-exports.getAllOS = function(db) {
+module.exports = function(app, db) {
+
+	// server routes ===========================================================
+	// handle things like api calls
+	// authentication routes
+	app.get('/os', getAllOS(db));
+	app.get('/phonelist', getAllPhones(db));
+
+	// frontend routes =========================================================
+	// route to handle all angular requests
+	app.get('*', function(req, res) {
+		res.sendfile('./public/index.html');
+	});
+
+};
+
+var getAllOS = function(db) {
 	return function(req, res) {
 		db.phonecollection.find(function (err, docs) {
 			if (err) {
@@ -13,7 +29,7 @@ exports.getAllOS = function(db) {
 	}
 }
 
-exports.getAllPhones = function(db) {
+var getAllPhones = function(db) {
 	return function(req, res) {
 		db.phonecollection.find(function (err, docs) {
 			if (err) {

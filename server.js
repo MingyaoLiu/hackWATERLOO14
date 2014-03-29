@@ -2,22 +2,29 @@ var http = require('http');
 var express = require('express');
 var events = require('events');
 var mongojs = require('mongojs');
-var routes = require('./app/routes');
 var phones = require('./data_repo/phone_data');
 
 var app = express();
 var db = mongojs('mydb', ['preferences', 'phonecollection']);
 
-app.use(express.json());
-app.use(app.router);
+var port = process.env.PORT || 3000; // set our port
 
-app.get('/public/index.html', function(req, res){
-    res.send('Hello World');
+app.configure(function() {
+	app.use(express.static(__dirname + '/public')); 	// set the static files location /public/img will be /img for users
+	app.use(express.json());
+	app.use(app.router);
+	app.use(express.logger('dev')); 					// log every request to the console
+	app.use(express.bodyParser()); 						// pull information from html in POST
+	app.use(express.methodOverride()); 					// simulate DELETE and PUT
 });
 
-var server = app.listen(3000, function() {
-    console.log('Listening on port %d', server.address().port);
-});
+// routes ==================================================
+var routes = require('./app/routes')(app, db); // pass our application into our routes
+
+// start app ===============================================
+app.listen(port);	
+console.log('Magic happens on port ' + port); 			// shoutout to the user
+exports = module.exports = app; 						// expose app
 
 var osList = [
 	{
@@ -57,7 +64,6 @@ db.phonecollection.insert(osList, function(err, saved) {
 	}
 });*/
 
-app.get('/os', routes.getAllOS(db));
-app.get('/phonelist', routes.getAllPhones(db));
+
 
 
