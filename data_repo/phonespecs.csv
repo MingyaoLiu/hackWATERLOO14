@@ -1,0 +1,102 @@
+model,,Samsung - Galaxy Nexus,BackBerry - Z10,HTC - DROID DNA,HTC - ONE X+,APPLE - iPhone 4s,APPLE - iPhone 5,HTC - One X,,MEIZU MX2,GALAXY NOTE 2,Huawei Ascend D2,Huawei Ascend Mate,Sony Xperia ZL  Xperia C66,Xperia Z Xperia C66,"Xperia T LTE  LT30a, TL LT30at"
+release_date,,2011/11,2013/3,2012/12,,2011/10,2012/11,,,,,,,,,
+units_sold_first_month,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+display,size_inches,4.65,4.2,5,4.7,3.5,4,4.7,,4.4,,,,,,
+display,resolution_hw,1280 x 720 px,1280 x 768 px,1920 x 1080 px,1280 x 720 px,960 x 640,1136 x 640 px,1280 x 720 px,,1280 x 800px,720x1280px,1080x1920px,720x1280px,1080x1920px,1080x1920px,720x1280px
+display,colors_10k,1600,1600,1600,1600,1600,1600,1600,,1600,16M,16M,16M,16M,16M,16M
+display,display_tech,Super AMOLED,,SuperLCD 3 IPS,SuperLCD 2 IPS,TFT IPS,LCD IPS,SuperLCD 2,,TFT,SuperAMOLED HD,LCD,LCD,TFT,TFT,TFT
+display,resolution_rating,Pentile RGB,,普通 RGB,普通 RGB,普通 RGB,普通 RGB,普通 RGB,,,,,,,,
+display,density_ppi,316,356,441,,326,326,,,347,,,,,,
+display,contrast,,,,,800：1,800：1,,,1000：1,,,,,,
+display,brightness_cd_m2,,,,,500,500,,,450,,,,,,
+display,touch_screen_tech,,, 电容,电容,,电容,电容,,,,,,,,
+display,multitouch,Yes,,Yes,Yes,,Yes,Yes,,380h,250h,144h,216h,500h,550h,450h
+display,glass,康宁 金刚玻璃,,康宁 金刚玻璃 2代,康宁 金刚玻璃 2代,,,康宁 金刚玻璃 1代,,Available,Available,Surround Sound,Surround Sound,Available,Available,Available
+display,others,曲屏,,,2.5D 弧屏,,,2.5D 弧屏,,,,,,,,
+,,,,,,,,,,,,,,,,
+processor,cpu,Texas Instruments OMAP 4460,骄龙S4 MSM8960,骄龙S4 APQ8064,图睿3 AP37,苹果 A5,苹果 A6,图睿3 AP33,骄龙S4 MSM8960,MX5S(Exynos 4412),Polyphonic,Polyphonic,Polyphonic,Polyphonic,Polyphonic,Polyphonic
+processor,core_size,,,,,,,,,,,,,,,
+processor,architecture,ARM-v7,,,,,,,,,,,,,,
+processor,,Cortex-A9,Krait,,,,,,,,,,,,,
+processor,l1_cache_kb,,8 + 32,,,,,,,,,,,,,
+processor,l2_cache_kb,,2048,,,,,,,,,,,,,
+processor,l3_cache_kb,,无,8 + 32 + 2048,0 + 64 + 1024,,0 + 64 + 1024,0 + 64 + 1024,8 + 32 + 2048,,,,,,,
+processor,max_frequency_mhz,1200,1500,1500,1700,800,1300,1500,1500,1600,,,,,,
+processor,number_of_cores,2,2,4,4 + 1,,2,4 + 1,2,4,,,,,,
+processor,manufacturing_process,45 nm,28 nm + HKMG,28 nm + HKMG,40 nm + LPG,45 nm + HKMG,32 nm + HKMG,40 nm + LPG,28 nm + HKMG,32 nm HKMG,LTE 700,HSDPA 2100 (3.5G),HSDPA 2100 (3.5G),LTE 700,LTE 2600,LTE 1700
+processor,gpu,PowerVR SGX540,Adreno 225,Adreno 320,GeForce ULP,PowerVR SGX 543,PowerVR SGX 543,Geforce ULP,Adreno 225,Mali 400,HSDPA 2100 (3.5G),HSDPA 900,HSDPA 850 (3.5G),LTE 2100,LTE 850,LTE 850
+processor,instruction_set,USSE,VeNum,VeNum,Neon,USSE 2,USSE 2,Neon,VeNum,Core,,,,,,
+processor,simd,4,8,,12,8,12,12,8,4 + 1,,,,,,
+processor,mid_per_simd,2,4,,1,4,4,1,4,4,,,,,,
+processor,mad,8,32,,12,32,48,12,32,18,HSDPA 1900 (3.5G),GSM 900,HSDPA 1700 (3.5G),LTE 850,LTE 900,LTE 1900
+processor,frequency_mhz,307,400,,520,,266,520,400,Wi-Fi (wireless LAN),HSDPA 850 (3.5G),GSM 1800,HSDPA 900,LTE 1900,LTE 800,LTE 700
+processor,floating_point_per_second_200mhz,3.2,12.8,,4.8,12.8,19.2,4.8,12.8,7.2,,,,,,
+processor,memory_gb,1,2,1,2,0.5,1,1,,2,,,,,,
+processor,frequency_2_mhz,,,,LPDDR2 - 800,LPDDR2 - 533/800,LPDDR2 - 1066,,,LPDDR2 - 1066,,,,,,
+processor,bandwidth_gb_s,32 Bit Dual-Channel LPDDR2-,,,,,8.5,,,,,,,,,
+processor,flash_memory_gb,8/16/32,16/32/64,16/32/64,16/32/64,16/32/64,16/32/64,16/32,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,CDMA 800,GSM 1900,GSM 900,HSDPA 2100 (3.5G),LTE 1800,HSDPA 2100 (3.5G)
+camera,front_camera_mp,1.3,2,2.1,1.6,0.3,1.2,1.3,,1.3,CDMA 1900,GSM 850,GSM 1800,HSDPA 1900 (3.5G),HSDPA 2100 (3.5G),HSDPA 1900 (3.5G)
+camera,aperture,,,,,,,,,,GSM 900,Wi-Fi (wireless LAN),GSM 1900,HSDPA 850 (3.5G),HSDPA 850 (3.5G),HSDPA 850 (3.5G)
+camera,light_sensor_technology,,,CMOS,,,,,,,GSM 1800,Integrated GPS,GSM 850,HSDPA 1700 (3.5G),HSDPA 900,HSDPA 1700 (3.5G)
+camera,back_camera_mp,5,8,8,8,8,8,8,,8,GSM 1900,v2.0,Wi-Fi (wireless LAN),HSDPA 900,GSM 900,GSM 900
+camera,aperture,,,f/2.0,f/2.0,,,f/2.0,,,GSM 850,v4.0,Integrated GPS,GSM 900,GSM 1800,GSM 1800
+camera,focal_length_mm,,,28,28,,,28mm,,,,,,,,
+camera,light_sensor,,,CMOS 背照式,背照式,,背照式,CMOS 背照式,,CMOS 背照式,Integrated GPS,3.5mm Audio Connector,v2.0,GSM 1800,GSM 1900,GSM 1900
+camera,flash,Single LED,,Single LED,Single LED,Single LED,Single LED,Single LED,,Single LED,,,,,,
+camera,hdr,,,,,,,,,,,,,,,
+camera,ois,,,,,,,,,,,,,,,
+,,,,,,,,,,,Wi-Fi (wireless LAN),Class 12 *,v4.0,GSM 1900,GSM 850,GSM 850
+miscellaneous,microphone,Front + Back,,Front + Back,Front + Back,Front + Back,Front + Back + Top,Front + Back,,Front + Back,v2.0,Class 12 *,3.5mm Audio Connector,GSM 850,Integrated GPS,Integrated GPS
+miscellaneous,speakers,Mono,,Mono + Beats Audio®,Mono + Beats Audio®,Mono,Mono,Mono + Beats Audio®,,Mono,v4.0,,Class 12 *,Integrated GPS,Wi-Fi (wireless LAN),Wi-Fi (wireless LAN)
+miscellaneous,data_connector,micro-USB,micro-USB,micro-USB,micro-USB,苹果 30针接口,Lightning,micro-USB,,micro-USB,Available,,Class 12 *,Wi-Fi (wireless LAN),v2.0,v2.0
+miscellaneous,hdmi,无 通过micro-USB实现,,无 通过micro-USB实现,无 通过micro-USB实现,无,无,无 通过micro-USB实现,,无 通过micro-USB实现,3.5mm Audio Connector,,,v2.0,v4.0,v3.0
+miscellaneous,memory_card,,,无,micro-SD,无,无,无,,无,1xEV-DO,1.5GHz Quad-core,,v4.0,Available,Available
+miscellaneous,microphone_jack_mm,3.5,,3.5,3.5,3.5,3.5,3.5,,3.5,Mobile High-Definition Link,2GB,,Available,3.5mm Audio Connector,3.5mm Audio Connector
+miscellaneous,battery_mah,1800 锂离子 可更换,,2020 锂离子 内置,2200 锂离子 内置,1420 锂离子 内置,1440 锂离子 内置,1800 锂离子 内置,,1800 锂离子,Class 10 *,32GB,1.5GHz Quad-core,3.5mm Audio Connector,Mobile High-Definition Link,Mobile High-Definition Link
+,,,,,,,,,,,,,,,,
+sensors,compass,Yes,,Yes,Yes,Yes,Yes,Yes,,Yes,,,,,,
+sensors,gyroscope,,,,,,,,,,FM,Gesture Control,2GB,Mobile High-Definition Link,Class 12,Class 12
+sensors,distance_sensor,,,,,,,,,,,,,,,
+sensors,light_sensor,,,,,,,,,,,,,,,
+sensors,pressure_sensor,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+battery_life,talk_days,,,,12.75,8,8,,8.5,10,,,,,,
+battery_life,standby_days,,,,15,8.35,9.35,,12.6,13.75,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+wireless_specifications,wifi,802.11 a/b/g/n,,802.11 b/g/n,802.11 b/g/n,802.11 b/g/n,802.11 a/b/g/n,802.11 a/b/g/n,,802.11 b/g/n,RDS,Proximity Sensor,Gesture Control,Class 12,FM,FM
+wireless_specifications,wifi_direct,Yes,,,,,,,,Yes,,,,,,
+wireless_specifications,gps,GPS+ AGPS,,GPS + AGPS ,GPS + AGPS  + GLONASS,GPS + AGPS  + GLONASS,GPS + AGPS  + GLONASS,GPS + AGPS ,,GPS + AGPS  + GLONASS,Class 10 *,Accelerometer,Proximity Sensor,Available,RDS,RDS
+wireless_specifications,bluetooth,3.0 + A2DP + EDR,,4.0 + A2DP + EDR,4.0 + A2DP + ED + RaptX™,4.0 + A2DP + EDR,4.0 + A2DP + EDR,4.0 + A2DP + ED + RaptX™,,4.0 + A2DP + EDR,,13 Megapix,Accelerometer,FM,Class 12,Class 12
+wireless_specifications,dlna,Yes,,Yes,Yes,无,无,Yes,,Yes,,,,,,
+wireless_specifications,nfc,Yes,,Yes,Yes,无,无,Yes,,无,,LED,8 Megapix,RDS,,
+,,,,,,,,,,,,,,,,
+os,os,Android,,,,,,,,,,,,,,
+,,,,,,,,,,,,Available,LED,Class 12,,
+dimensions,height_mm,135.5,,141.4,134.4,115.2,123.8,134.36,,124.9,1.6GHz Quad-core,Available,4050 mAh,,,
+dimensions,width_mm,67.94,,70.5,69.9,58.6,58.6,69.9,,64.9,2GB,3000 mAh,Digital Compass,,1.5GHz Quad-core,1.5GHz Dual-core
+dimensions,thickness_mm,8.94,,9.7,8.9,9.3,7.6,8.9,,10.2,microSD,Digital Compass,,,2GB,1GB
+dimensions,weight_gram,135,,141.7,135,140,112,130,,142,16GB,,,1.5GHz Quad-core,microSD,microSD
+,,,,,,,,,,,Gesture Control,,,2GB,16GB,16GB
+,,,,,,,,,,,Proximity Sensor,,163.5x85.7x9.9mm,microSD,Proximity Sensor,Gesture Control
+,,,,,,,,,,,Accelerometer,Dust Resistant,198g,16GB,Accelerometer,Proximity Sensor
+,,,,,,,,,,,Barometer,Water Resistant,Candy Bar,Gesture Control,13 Megapix,Accelerometer
+,,,,,,,,,,,8 Megapix,140x71x9.4mm,,Proximity Sensor,LED,13 Megapix
+,,,,,,,,,,,LED,170g,,Accelerometer,Available,LED
+,,,,,,,,,,,Available,Candy Bar,,13 Megapix,Available,Available
+,,,,,,,,,,,Available,,,LED,2330 mAh,Available
+,,,,,,,,,,,3100 mAh,,,Available,Digital Compass,1850 mAh
+,,,,,,,,,,,Digital Compass,,,Available,,Digital Compass
+,,,,,,,,,,,,,,2370 mAh,,
+,,,,,,,,,,,,,,Digital Compass,,
+,,,,,,,,,,,,,,,Dust Resistant,
+,,,,,,,,,,,151.1x80.5x9.4mm,,,,Water Resistant,129.4x67.3x9.4mm
+,,,,,,,,,,,179.4g,,,,139x71x7.9mm,148g
+,,,,,,,,,,,Candy Bar,,,131.6x69.3x9.8mm,146g,Scratch-Resistant Glass
+,,,,,,,,,,,,,,151g,Scratch-Resistant Glass,Candy Bar
+,,,,,,,,,,,,,,Scratch-Resistant Glass,Candy Bar,
+,,,,,,,,,,,,,,Candy Bar,,
