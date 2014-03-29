@@ -49,6 +49,12 @@
 				$scope.phones = data;
 			});
 		}
+
+		function getSpecslist($scope, $http) {
+			$http({method: 'GET', url: '/specslist'}).success(function(data) {
+				$scope.specs = data;
+			});
+		}
 	</script>
 
 

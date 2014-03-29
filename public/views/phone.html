@@ -16,19 +16,12 @@
 	</div>
 	<div class="devvertilayer">
 		<div class="leftdownseg">
-			<div class="spectype" ng-repeat="phone in phones">
-			<ul>
-				<li class="bigone">{{phone.name}}</li>
-				<li class="normalone">d</li>
-				<li class="normalone">df</li>
-				<li class="normalone">s</li>
-				<li class="normalone">g</li>
-				<li class="normalone">f</li>
-				<li class="normalone">s</li>
-				<li class="normalone">f</li>
-				<li class="normalone">s</li>
-			</ul>
-		</div>
+			<div class="spectype">
+				<ul ng-repeat="spec in specs">
+					<!-- <li class="bigone">{{}}</li> -->
+					<li class="normalone">{{spec}}</li>
+				</ul>
+			</div>
 		</div>
 	</div>
 </div>
@@ -86,36 +79,12 @@
 
 	<div class="bottomongo">
 
-		<div class="devrepeat2">
+		<div class="devrepeat2" ng-repeat="phone in phones">
 			<ul>
-				<li class="devname">d</li>
-				<li class="devfunc1">d</li>
-				<li class="devfunc1">df</li>
-				<li class="devfunc1">s</li>
-				<li class="devfunc1">g</li>
-				<li class="devfunc1">f</li>
-				<li class="devfunc1">s</li>
-				<li class="devfunc1">f</li>
-				<li class="devfunc1">s</li>
+				<li class="devname">{{phone.name}}</li>
+				<li class="devfunc1" ng-repeat="(key,val) in phone">{{val}}</li>
 			</ul>
 		</div>
-
-		<div class="devrepeat2">
-			<ul>
-				<li class="devname">d</li>
-				<li class="devfunc1">d</li>
-				<li class="devfunc1">df</li>
-				<li class="devfunc1">s</li>
-				<li class="devfunc1">g</li>
-				<li class="devfunc1">f</li>
-				<li class="devfunc1">s</li>
-				<li class="devfunc1">f</li>
-				<li class="devfunc1">s</li>
-			</ul>
-		</div>
-
-
-
 	</div>
 </div>
 </div>

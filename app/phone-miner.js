@@ -6,7 +6,8 @@ var phonesToMine = [
 	"http://www.phonegg.com/phone/3434-Samsung-Galaxy-Grand-Neo-GT-I9060-16GB",
 	"http://www.phonegg.com/phone/2375-Samsung-I929-Galaxy-S-II-Duos",
 	"http://www.phonegg.com/phone/3390-LG-Nexus-5-16GB",
-	"http://www.phonegg.com/phone/3408-Nokia-XL"
+	"http://www.phonegg.com/phone/3408-Nokia-XL",
+	"http://www.phonegg.com/phone/3261-Motorola-Moto-X-32GB"
 ];
 
 exports.minePhoneEgg = function(http, db) {
@@ -73,10 +74,11 @@ var parsePhoneEgg = function(str) {
 		}
 		else if ($(this).hasClass('cat')) {
 			category = $(this).find('div').text()
-			phone[category] = {};
+			//phone[category] = {};
 		}
 		else if ($(this).children().length == 2) {
-			phone[category][$(this).find('.th').text()] = $(this).find('.l').text();
+			//phone[category][$(this).find('.th').text()] = $(this).find('.l').text();
+			phone[$(this).find('.th').text()] = $(this).find('.l').text();
 		}
 	});
 	phone["image"] = 'http:' + $('#rside img').first().attr('src');
