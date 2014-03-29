@@ -4,6 +4,8 @@
   "description": "Compare and review different phone models",
   "dependencies": {
     "mongojs": "^0.10.1",
-    "express": "^3.5.1"
+    "express": "^3.5.1",
+    "jquery": "^2.1.0",
+    "cheerio": "^0.13.1"
   }
 }

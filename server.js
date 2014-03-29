@@ -3,9 +3,10 @@ var express = require('express');
 var events = require('events');
 var mongojs = require('mongojs');
 var phones = require('./data_repo/phone_data');
+var miner = require('./app/phone-miner');
 
 var app = express();
-var db = mongojs('mydb', ['preferences', 'phonecollection']);
+var db = mongojs('mydb', ['phonecollection']);
 
 var port = process.env.PORT || 3000; // set our port
 
@@ -26,43 +27,12 @@ app.listen(port);
 console.log('Magic happens on port ' + port); 			// shoutout to the user
 exports = module.exports = app; 						// expose app
 
-var osList = [
-	{
-		name: "Android",
-		version: {
-			company: "Google",
-			opensource: "Yes"
-		}
-	},
-	{
-		name: "iOS"
-	},
-	{
-		name: "Windows Phone"
-	},
-	{
-		name: "BlackBerry"
-	}
-];
+var insertData = function(err, numOfDocsRemoved) {
+	miner.minePhoneEgg(http, db);
+}
 
-var osInDb;
-
-
-db.phonecollection.insert(osList, function(err, saved) {
-	if (err || !saved) {
-		console.log("Record is not saved.");
-	} else {
-		console.log("Record is saved.");
-	}
-});
-
-/*db.phonecollection.insert(phones.phone_data, function(err, saved) {
-	if (err || !saved) {
-		console.log("Record is not saved.");
-	} else {
-		console.log("Record is saved.");
-	}
-});*/
+// Every time empty database first before inserting data
+db.phonecollection.remove(insertData);
 
 
 
