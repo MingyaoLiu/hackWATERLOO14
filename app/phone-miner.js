@@ -1,5 +1,14 @@
 var cheerio = require('cheerio');
 
+var phonesToMine = [
+	"http://www.phonegg.com/phone/3362-BlackBerry-Z30",
+	"http://www.phonegg.com/phone/3291-Apple-iPhone-5s-A1530-64GB",
+	"http://www.phonegg.com/phone/3434-Samsung-Galaxy-Grand-Neo-GT-I9060-16GB",
+	"http://www.phonegg.com/phone/2375-Samsung-I929-Galaxy-S-II-Duos",
+	"http://www.phonegg.com/phone/3390-LG-Nexus-5-16GB",
+	"http://www.phonegg.com/phone/3408-Nokia-XL"
+];
+
 exports.minePhoneEgg = function(http, db) {
 	console.log("PhoneEgg Miner getting to work...");
 
@@ -28,7 +37,10 @@ exports.minePhoneEgg = function(http, db) {
 		console.log('Problem with request: ' + e.message);
 	});*/
 
-	http.get('http://www.phonegg.com/phone/3362-BlackBerry-Z30', function(res) {
+	phonesToMine.forEach(function(phoneUrl) {
+		console.log(phoneUrl);
+
+		http.get(phoneUrl, function(res) {
 		console.log('Got response' + res.statusCode);
 
 		var page = '';
@@ -47,8 +59,7 @@ exports.minePhoneEgg = function(http, db) {
 	}).on('error', function(e) {
 		console.log('Got error: ' + e.message);
 	});
-
-	return {name: "PhoneEgg"};
+	});
 }
 
 var parsePhoneEgg = function(str) {
@@ -68,5 +79,6 @@ var parsePhoneEgg = function(str) {
 			phone[category][$(this).find('.th').text()] = $(this).find('.l').text();
 		}
 	});
+	phone["image"] = 'http:' + $('#rside img').first().attr('src');
 	return phone;
 };

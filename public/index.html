@@ -44,6 +44,11 @@
 
 	<!-- TEMP JS -->
 	<script type="text/javascript">
+		function getPhonelist($scope, $http) {
+			$http({method: 'GET', url: '/phonelist'}).success(function(data) {
+				$scope.phones = data;
+			});
+		}
 	</script>
 
 
