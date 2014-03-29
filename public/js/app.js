@@ -1,0 +1,1 @@
+angular.module('DevChkApp', ['ngRoute', 'appRoutes', 'ngAnimate', 'MainCtrl', 'PhoneCtrl', 'PhoneService', 'TabletCtrl', 'TabletService']);

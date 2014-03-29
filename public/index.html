@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<base href="/">
+
+	<title>Money Printer</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/style.css"> <!-- custom styles -->
+
+
+	<!-- JS -->
+	<script src="libs/angular/angular.min.js"></script>
+	<script src="libs/angular-route/angular-route.min.js"></script>
+	<script src="libs/angular-animate/angular-animate.min.js"></script>
+	
+	<!-- JQUERY LIBS -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!--	
+	<script src="js/jquery.lettering-0.6.1.min.js"></script>
+	<script src="js/jquery.superscrollorama.js"></script>
+-->
+
+	<!-- ANGULAR CUSTOM -->
+	<script src="js/appRoutes.js"></script>
+	<script src="js/app.js"></script>
+
+	<!-- Home JS -->
+	<script src="js/controllers/MainCtrl.js"></script>
+
+	<!-- Phone JS -->
+	<script src="js/controllers/PhoneCtrl.js"></script>
+	<script src="js/services/PhoneService.js"></script>
+
+	<!-- Tablet JS -->
+	<script src="js/controllers/TabletCtrl.js"></script>
+	<script src="js/services/TabletService.js"></script>
+	
+	<!-- Tablet JS -->
+	<script src="js/controllers/TabletCtrl.js"></script>
+	<script src="js/services/TabletService.js"></script>
+
+
+	<!-- TEMP JS -->
+	<script type="text/javascript">
+	</script>
+
+
+</head>
+<body ng-app="DevChkApp" ng-controller="MainController">
+<div class="container">
+	<!--DYNAMIC -->
+	<div ng-view class="fadeInOut"></div>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+
+
+function takeback() {
+	jQuery('html,body').animate({scrollTop: jQuery('#midseg').offset().top});
+}
+
+
+jQuery(window).scroll(function(e) {
+    // Get the position of the location where the scroller starts.
+    var scroller_anchor = jQuery(".scroller_anchor").offset().top;
+    
+    // Check if the user has scrolled and the current position is after the scroller's start location and if its not already fixed at the top 
+    if (jQuery(this).scrollTop() >= scroller_anchor && jQuery('#midseg').css('position') != 'fixed') 
+    {    // Change the CSS of the scroller to hilight it and fix it at the top of the screen.
+        jQuery('#midseg').css({
+            'background': '#DB9E36',
+            'position': 'fixed',
+            'top': '0px',
+            'marginTop': '0px',
+            'height': '50px'
+        });
+        jQuery('.bottomseg').css({
+            'top': '40px'
+        });
+        // Changing the height of the scroller anchor to that of scroller so that there is no change in the overall height of the page.
+        jQuery('.scroller_anchor').css('height', '40px');
+    } 
+    else if (jQuery(this).scrollTop() < scroller_anchor && jQuery('#midseg').css('position') != 'relative') 
+    {    // If the user has scrolled back to the location above the scroller anchor place it back into the content.
+        
+        // Change the height of the scroller anchor to 0 and now we will be adding the scroller back to the content.
+        jQuery('.scroller_anchor').css('height', '0px');
+        
+        // Change the CSS and put it back to its original position.
+        jQuery('#midseg').css({
+            'background': '#FFD34E',
+            'position': 'relative',
+            'marginTop': '5px',
+            'height': '40px'
+        });
+        jQuery('.bottomseg').css({
+            'top': '5px'
+        });
+    }
+});
+	</script>

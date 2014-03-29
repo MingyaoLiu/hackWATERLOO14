@@ -1,3 +1,6 @@
 /node_modules
 /data
+/public/libs
+/public/Thumbs.db
+npm-debug.log
 
