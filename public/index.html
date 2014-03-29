@@ -44,11 +44,6 @@
 
 	<!-- TEMP JS -->
 	<script type="text/javascript">
-		function getPhonelist($scope, $http) {
-			$http({method: 'GET', url: '/phonelist'}).success(function(data) {
-				$scope.phones = data;
-			});
-		}
 	</script>
 
 
@@ -62,13 +57,26 @@
 </html>
 <script type="text/javascript">
 
+function scrollDiv(divA, divB, divNo) {
+        var div1 = $('#' + divA);
+        var div2 = $('#' + divB);
+        if (!div1 || !div2) return;
+        var control = null;
+        if (divNo == 1) control = div1;
+        else if (divNo == 2) control = div2;
+        if (control == null) return;
+        else {
+            div1.scrollLeft(control.scrollLeft());
+            div2.scrollLeft(control.scrollLeft());
+            div1.scrollTop(control.scrollTop());
+            div2.scrollTop(control.scrollTop());
+        }
+    }
 
 function takeback() {
-	jQuery('html,body').animate({scrollTop: jQuery('#midseg').offset().top});
+	jQuery('.rightseg,.leftseg').animate({scrollTop: jQuery('#midseg').offset().top});
 }
-
-
-jQuery(window).scroll(function(e) {
+jQuery('.rightseg').scroll(function(e) {
     // Get the position of the location where the scroller starts.
     var scroller_anchor = jQuery(".scroller_anchor").offset().top;
     
@@ -83,7 +91,7 @@ jQuery(window).scroll(function(e) {
             'height': '50px'
         });
         jQuery('.bottomseg').css({
-            'top': '40px'
+            'top': '45px'
         });
         // Changing the height of the scroller anchor to that of scroller so that there is no change in the overall height of the page.
         jQuery('.scroller_anchor').css('height', '40px');
@@ -102,7 +110,7 @@ jQuery(window).scroll(function(e) {
             'height': '40px'
         });
         jQuery('.bottomseg').css({
-            'top': '5px'
+            'top': '10px'
         });
     }
 });

@@ -1,6 +1,6 @@
 
 
-<div class="leftseg">
+<div class="leftseg" id='vert' onscroll="scrollDiv('hori', 'vert', 2)">
 	<nav class="navbar-verticle"> 
 		<ul>
 			<li class="catactive catafirst"><a href="/phones">PHONES</a></li>
@@ -14,11 +14,11 @@
 	<div class="midleftseg">
 		
 	</div>
-	<div class="devvertilayer">
+	<div class="devvertilayer"  >
 		<div class="leftdownseg">
-			<div class="spectype" ng-repeat="phone in phones">
+			<div class="spectype">
 			<ul>
-				<li class="bigone">{{phone.name}}</li>
+				<li class="bigone">s</li>
 				<li class="normalone">d</li>
 				<li class="normalone">df</li>
 				<li class="normalone">s</li>
@@ -33,9 +33,9 @@
 	</div>
 </div>
 
-<div class="rightseg">
+<div class="rightseg" id='hori' onscroll="scrollDiv('hori', 'vert', 1)" >
 
-<div class="devhorilayer">
+<div class="devhorilayer" >
 
 	<div class="topmongo">
 	
@@ -86,9 +86,9 @@
 
 	<div class="bottomongo">
 
-		<div class="devrepeat2">
+		<div class="devrepeat2" ng-repeat="phone in phones">
 			<ul>
-				<li class="devname">d</li>
+				<li class="devname">{{phone.name}}</li>
 				<li class="devfunc1">d</li>
 				<li class="devfunc1">df</li>
 				<li class="devfunc1">s</li>
