@@ -6,4 +6,5 @@ angular.module('PhoneCtrl', []).controller('PhoneController', function($scope, $
 	getSpecslist($scope, $http);
 
 	window.setTimeout(takeback,1000);
+
 });

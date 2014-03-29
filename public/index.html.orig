@@ -44,6 +44,7 @@
 
 	<!-- TEMP JS -->
 	<script type="text/javascript">
+<<<<<<< HEAD
 		function getPhonelist($scope, $http) {
 			$http({method: 'GET', url: '/phonelist'}).success(function(data) {
 				$scope.phones = data;
@@ -55,6 +56,8 @@
 				$scope.specs = data;
 			});
 		}
+=======
+>>>>>>> origin/master
 	</script>
 
 

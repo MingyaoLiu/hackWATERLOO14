@@ -39,6 +39,7 @@ var getAllSpecs = function(db) {
 				var keys = [];
 				for (var key in docs[0]) keys.push(key);
 				keys.splice(0, 1);
+				keys.sort();
 				res.json(keys);
 				res.end();
 			}
